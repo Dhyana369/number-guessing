@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Play Game</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Make a Guess!</h2>
+
+        {% if message %}
+            <div class="message">{{ message }}</div>
+        {% endif %}
+
+        {% if not game_over %}
+            <p>Attempts Remaining: {{ attempts }}</p>
+            <form method="POST">
+                <input type="number" name="guess" required placeholder="Enter your guess">
+                <button type="submit">Submit Guess</button>
+            </form>
+        {% else %}
+            <a href="/restart">Play Again</a>
+        {% endif %}
+
+        {% if message and 'Correct!' in message %}
+        <script>
+            confetti({
+                particleCount: 150,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+        </script>
+        {% endif %}
+    </div>
+</body>
+</html>
