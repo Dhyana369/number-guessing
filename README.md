@@ -80,7 +80,7 @@ http://127.0.0.1:5000
 ```
 
 ---
-Notes
+## 📌Notes
 
 - Do not push venv/ to GitHub
 
@@ -89,7 +89,7 @@ Notes
 - This is a mini project, perfect for learning Flask, templates, and interactive web apps
 
 ---
-✅ How to Add This to Your Repo
+## ✅ How to Add This to Your Repo
 
 1. Create the file in your project folder:
 
