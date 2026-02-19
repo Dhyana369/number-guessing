@@ -1,4 +1,4 @@
-# NumGuess – Mini Project (Flask)
+# NumGuess
 
 A fun **mini project** web-based Number Guessing Game built with Python Flask.  
 Test your luck and skills by guessing the number selected by the computer!
@@ -80,13 +80,16 @@ http://127.0.0.1:5000
 ```
 
 ---
+Notes
 
-License
+- Do not push venv/ to GitHub
 
-MIT License
+- Game keeps track of attempts and winning time
+
+- This is a mini project, perfect for learning Flask, templates, and interactive web apps
+
 ---
-
-# ✅ How to Add This to Your Repo
+✅ How to Add This to Your Repo
 
 1. Create the file in your project folder:
 
