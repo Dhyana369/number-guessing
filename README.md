@@ -80,7 +80,7 @@ http://127.0.0.1:5000
 ```
 
 ---
-## 📌Notes
+## 📌 Notes
 
 - Do not push venv/ to GitHub
 
